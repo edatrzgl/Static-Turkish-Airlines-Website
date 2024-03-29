@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.real-header{
+    position: fixed;
+    width: 100%; 
+    z-index: 9999;
+}
+.header-top {
+    display: flex;
+    justify-content: flex-end;
+}
+.header-top{
+    background-color: #2b3947;
+    height: 30px;
+}
+.header-left-menu {
+    display: flex;
+    background-color: #2b3947;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.header-left-menu .item {
+    margin-left: 5px;
+    margin-right: 5px; /* Yazılar arasında boşluk bırak */
+    margin-top: 5px;
+    color: aliceblue;
+    font: 11px Museo-Sans-300;
+    padding: 0px 3px;
+    
+}
+.header-left-menu .item {
+    margin: 5px;
+    padding-left: 5px; 
+    border-left: 0.5px dashed rgb(250, 248, 248);
+}
+.header-main-menu{
+    height: 60px;
+    background-color: #232b38;
+}
+.header-main-menu .container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    height: 40px;
+    width: 218px;
+    margin-left: 15px;
+}
+.header-main-menu .contents ul {
+    display: flex; 
+    list-style: none;
+    color: rgb(249, 250, 250);
+    font: 13px MuseoSans-900;
+    line-height: 1;
+}
+.header-main-menu .contents .main-item{
+    padding: 20px 20px;
+    font-weight: bolder;
+    padding-right: 10px; 
+    padding-left: 10px;
+    border-right: 0.5px dashed rgb(250, 248, 248); 
+}
+
+.header-main-menu .contents .main-item-2 {
+    border-right: none; 
+}
+
+
+.header-main-menu .contents .acces_click{
+    display: inline-block;
+    padding: 5px 15px; /* Adjust padding as needed */
+    margin-top: 13px;
+    border-radius: 20px; /* Make the border-radius half of the height to achieve an oval shape */
+    border-color: rgb(246, 246, 246); 
+    border-width: 0.2px;
+    border-style: solid;
+    background-color: #2b3947; /* Background color of the button */
+    color: white; /* Text color */
+    text-align: center;
+    font-size: 16px; 
+}
+
+.big-image{
+    background-image: url(https://cdn.turkishairlines.com/m/6761929144cccc1e/original/anasayfa-1400.webp);
+    margin-top: 0px;
+    height: 520px;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.image-caption-container {
+    position: absolute;
+    left:25%;
+    top: 33%;
+    transform: translate(-30%, -30%);
+    text-align: left;
+}
+
+.item5 {
+    display: block;
+    margin-bottom: 5px;
+    color: white; /* Aralıkları ayarlamak için */
+    font-family:  Arial, Helvetica, sans-serif;
+}
+.ucus-container {
+    display: flex;
+    justify-content: space-around; 
+     margin-top: -100px; /* BURASI DEGISCEK*/
+     margin-left: -180px;
+
+}
+
+.navigation {
+    list-style-type: none;
+    width: 850px;
+    padding-bottom: 10px; 
+
+}
+
+.nav-item {
+    display:inline-block;
+}
+
+.nav-item span{
+    border: 0.5px solid #ece4e8a8; /* Kenar çizgisi */
+    padding: 10px; /*  İçeriği çerçeveleme */
+    background-color: #f4f5f8;
+    border-radius: 3px;
+}
+.nav-item img{
+    margin-right: 5px;
+}
+
+.flight-info-container {
+    justify-content: center; /* Yatayda ortalamak için */
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 1030px;
+    margin: 0 auto;
+    height: 265px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+.tam-kisim{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.sol-kisim ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.sol-kisim ul li {
+    margin-left: 30px;
+    font-size:17px;
+    margin-top: 10px;
+}
+.sag-kisim {
+    text-align: right;
+    margin-left: 80px; 
+    padding-right: 20px;
+   
+}
+.sag-kisim span {
+    display: block; /* Blok düzene alır */
+    font-size:17px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.kutucuklar {
+    display: flex;
+    justify-content: center; /* Yatayda ortalamak için */
+    align-items: center; /* Dikeyde ortalamak için */
+    margin-top: 20px; /* Yazıların altına boşluk eklemek için */
+}
+
+.kutucuk {
+    width: 200px;
+    height: 60px;
+    background-color: #f4f5f8;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 10px; /* Kutucuklar arası boşluk eklemek için */
+    font-size: large;
+    border-radius: 5px;
+}
+.kutucuk-last{
+    width: 140px;
+    background-color: red;
+    color: white;
+    text-align: start;
+    padding-left: 4px;
+}
+
+.ok-image{
+    padding-left: 40px;
+    padding-top: 15px;
+    height: 31px;
+}
+.kutucuk-alti{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+   
+
+}
+.kutucuk-solu{
+   padding-left: 20px;
+   padding-top: 20px; 
+    font-size: large;
+}
+.kutucuk-sagi{
+    padding-right: 22px;
+    padding-top: 20px; 
+    font-size: large;
+ }
+ .fas{
+    color: red;
+    padding-left: 5px;
+
+ }
+ .schedule-boxes{
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+    margin-top: 18px;
+    width: 1051.5px;
+    padding-right: 20px;
+    
+ 
+ }
+
+.schedule-boxes ul {
+    display: flex; /* Öğeleri yatayda hizalamak için */
+    list-style: none; 
+    margin-top: 20px 0 0 0;
+    height: 110px;
+
+}
+
+.schedule-boxes li {
+    background-color: white;
+    flex: 1; /* Öğeleri eşit genişlikte olacak şekilde ayarlar */
+    border-right: 1px solid #c3cbd7;
+    border-top: 1px solid #c3cbd7;
+    text-align: center; /* Metni ortalar */
+    padding: 3px; /* İçerik ile kenar arasında boşluk ekler */
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 10px;
+
+}
+
+.schedule-boxes li span {
+    display: block; /* Metni blok elementi olarak ayarlar */
+    margin-top: 55px;
+    font-size: small;
+      
+}
+
+.schedule-boxes img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #dae0e8;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.dear-passengers-container {
+    justify-content: center; /* Yatayda ortalamak için */
+    align-items: center;
+    background-color: rgb(252, 249, 252);
+    width: 1030px;
+    margin: auto;
+    margin-top: 25px;
+    height: 110px;
+    border-radius: 3px;
+    border: 0.5px dashed rgb(3, 0, 0);
+}
+
+.dear-ust-kisim{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.ust-kisimin-solu{
+    padding: 20px;
+    font-size: large;
+}
+.ust-kisimin-sagi{
+    padding: 20px;
+}
+.statement{
+    padding-left: 50px;
+}
+.kesfet-container{
+    width: 850px;
+    margin: 30px auto;
+    height: 490px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row{
+    display: flex;
+    justify-content: center; 
+   
+}
+.col-md-6{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; 
+
+}
+.col-border{
+    border-right: 1px solid #000000;
+    padding-right: 10px;
+    padding-left: 10px;
+     
+}
+.btn-danger{
+    background-color: red;
+    color: white;
+    border: 2px solid #e81932; 
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-size: medium;
+    font-weight: bold;
+    
+}
+
+.basliklar{
+    font-size: 18px;
+    font-family: MuseoSans-500;  
+    margin: 10px 0; 
+}
+
+.wingo {
+    justify-content: flex-start; 
+    background-color: white;
+    width: 1030px;
+    margin: auto;
+    margin-top: 25px;
+    height: 70px;
+}
+.wingo-tittle{
+    font-size:30px;
+    display: flex;
+}
+.just-izmir {
+    color: #e81932;
+}
+.fa-small{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.center-text{
+    background-color: rgb(255, 255, 255);
+    width: 1030px;
+    margin: auto;
+    margin-top: 25px;
+    height: 80px;
+}
+.center-text2{
+    text-align: center;
+}
+.ozel-firsat{
+   color: #212529; 
+   font-size: 30px;
+}
+.all-kampanya{
+    padding-top: 7px;
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    width: 1030px;
+     margin: auto; 
+    margin-top: 40px;
+    margin-bottom: 60px ;
+    height: 300px;
+}
+.section {
+    flex: 1;
+    text-align: center;
+}
+.dortlu-container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 40px 80px;
+}
+.dortlu-item {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+    
+.dortlu-item img {
+    height: auto;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+.uclu-container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 20px 80px;
+}
+.uclu-item{
+    margin: 0 80px;
+}
+.footer-1{
+    display: flex;
+    justify-content: center;
+    background-color: #232b38;;
+    height:60px;
+    
+}
+.ul-class{
+    list-style: none;
+}
+.nav-item2{
+    display: inline-block;
+    font-size: 22px; /* İkonların boyutunu ayarlamak için */
+    padding: 15px 10px;
+    color: #c3cbd7;
+    
+}
+.footer-2{
+    display: flex;
+    justify-content: center;
+    background-color: #181c23;
+    height: 60px;
+}
+.nav-tem3 {
+    text-align: center;
+    position: relative;
+    padding: 4.875px 9.75px;
+    color: #fff;
+    font-size: 11px;
+    border-left: 1px solid #232b38;
+    border-right: 1px solid #232b38;
+    border-radius: 0;
+}
+
+.nav-tem3 span {
+    display: block;
+    padding: 10px;
+
+}
+.footer-3 {
+
+    align-items: center;
+    height: 160px;
+    background-color: #181c23;
+}
+
+.last-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-item {
+    margin-top: 30px;
+    font-size: 11px;
+    padding: 20px;
+    color: #c3cbd7;
+}
+
+.last-child{
+    justify-content: center;
+    font-size: 11px;
+    color: #c3cbd7;;
+    display: flex;
+   margin-top: 15px;
+    text-align: center;
+}
+.contact-button {
+    text-align: center;
+    line-height: 5px;
+    writing-mode: vertical-rl;
+    width: 44px;
+    height: 120px;
+    position: fixed;
+    top: 55%;
+    right: 0;
+    z-index: 9999;
+    transform: rotate(180deg);
+    background-color: #0e3258; 
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
